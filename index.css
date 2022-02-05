@@ -11,5 +11,21 @@
     margin: 1rem;
     scroll-behavior: smooth;
     
+   ;
+    
+    
+   
+   
     
 }
+body{
+   
+.header{
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+
+}
+#quiz{
+ 
