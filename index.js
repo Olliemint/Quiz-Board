@@ -11,14 +11,14 @@ function check() {
     var Q9=document.quiz.question9.value;
     
     if (Q1=="File") {c++}
-    if (Q2=="File") {c++}
-    if (Q3=="File") {c++}
-    if (Q4=="File") {c++}
-    if (Q5=="File") {c++}
-    if (Q6=="File") {c++}
-    if (Q7=="File") {c++}
-    if (Q8=="File") {c++}
-    if (Q9=="File") {c++}
+    if (Q2=="Run time errors") {c++}
+    if (Q3=="All of the above") {c++}
+    if (Q4=="Conditional operator") {c++}
+    if (Q5=="Mocha") {c++}
+    if (Q6=="Cassandra") {c++}
+    if (Q7=="use strict") {c++}
+    if (Q8=="Object") {c++}
+    if (Q9=="Graphics") {c++}
 
     document.write(c);
 }
