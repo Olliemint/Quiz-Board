@@ -9,7 +9,8 @@ function check() {
     var Q7=document.quiz.question7.value;
     var Q8=document.quiz.question8.value;
     var Q9=document.quiz.question9.value;
-    
+    var results=document.getElementById('results');
+    var quiz=document.getElementById('quiz');
     if (Q1=="File") {c++}
     if (Q2=="Run time errors") {c++}
     if (Q3=="All of the above") {c++}
@@ -20,5 +21,6 @@ function check() {
     if (Q8=="Object") {c++}
     if (Q9=="Graphics") {c++}
 
-    document.write(c);
+    quiz.style.display="none"
+    
 }
