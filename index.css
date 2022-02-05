@@ -1,29 +1,15 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,300&display=swap');  
 *{
    
-    margin: 0; padding: 0;
+    margin: 0; 
+    padding: 0;
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
     margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    scroll-behavior: smooth;
     
-}
-.header{
-border-radius: 10px;
-background: #584141;
-box-shadow:  19px 19px 38px #4b3737,
-             -19px -19px 38px #654b4b;
-             text-align: center;
-}
-#quiz{
-    border-radius: 5px;
-background: #866565;
-box-shadow:  37px 37px 74px #725656,
-             -37px -37px 74px #9a7474;
-}
-.java{
-    border-radius: 10px;
-background: #d1a9a9;
-box-shadow: inset 37px 37px 23px #b29090,
-            inset -37px -37px 23px #f0c2c2;
+    
 }
