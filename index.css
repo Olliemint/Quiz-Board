@@ -11,21 +11,20 @@
     margin: 1rem;
     scroll-behavior: smooth;
     
-   ;
-    
-    
-   
-   
     
 }
-body{
-   
 .header{
     text-align: center;
-    width: 100%;
-    font-size: 15px;
-    padding: 5px;
-
+    border-radius: 21px;
+background: linear-gradient(145deg, #3c242b, #482b33);
+box-shadow:  10px 10px 48px #1b1013,
+             -10px -10px 48px #6b404d;
 }
-#quiz{
- 
+
+    
+    
+   
+   
+    
+}
+
