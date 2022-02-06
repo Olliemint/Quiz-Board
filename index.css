@@ -10,7 +10,7 @@
     font-family: 'Roboto', sans-serif;
     margin: 1rem;
     scroll-behavior: smooth;
-    
+
     
 }
 .header h1,h2{
@@ -65,6 +65,24 @@ box-shadow:  10px 10px 48px #38242a,
    #quiz p{
        color: #221622;
    }
+
+.container{
+    justify-content: center;
+    background-color: oldlace;
+}
+
+
+.student-name{
+    width: 50%;
+    margin-left: 250px;
+}
+#no-name {
+    display: none;
+    margin-top: 2%;
+}
+#no-name span {
+    color: #4286f4;
+}
     
     
    
