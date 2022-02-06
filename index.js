@@ -23,10 +23,10 @@ function check() {
 
     quiz.style.display="none";
     
-   if (c<=4) {
-       results.textContent="your results is 50%. failed"
-   } else if (c<=5){
-    results.textContent="your results is 80%. passed"
+   if (c<=2) {
+       results.textContent="Your Score is 50%. scored poorly and they need to retake the test."
+   } else if (c>2){
+    results.textContent="Your Score is 80%. excellently passed."
        
    }
     
