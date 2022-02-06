@@ -14,7 +14,7 @@
     
 }
 .header h1,h2{
-    color: aliceblue;
+    color: #0a7894;
     font-size: 30px;
 }
 .header{
@@ -26,6 +26,7 @@ box-shadow:  10px 10px 48px #1b1013,
 }
 #quiz{
     border-radius: 21px;
+
 background: linear-gradient(145deg, #7e515f, #966070);
 box-shadow:  10px 10px 48px #38242a,
              -10px -10px 48px #e090a8;
@@ -57,6 +58,12 @@ box-shadow:  10px 10px 48px #38242a,
     -webkit-transform: translateY(-7px);
         -ms-transform: translateY(-7px);
             transform: translateY(-7px);
+   }
+   #quiz p:first-child{
+       color: #000000;
+   }
+   #quiz p{
+       color: #221622;
    }
     
     
