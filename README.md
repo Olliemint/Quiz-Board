@@ -32,7 +32,7 @@
 ---
 
 Click on the link below to view the live site
-<a href="">click here<a>
+<a href="https://olliemint.github.io/Quiz-Board/">click here<a>
 
 
 ## Technology Used
