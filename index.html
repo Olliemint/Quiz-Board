@@ -1,89 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
     <title>Quiz Board</title>
-    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>ssssssssssssssssssssssssssssss</h1>
-   
-</div>
-<div class="bigcontainer">
+    <div class="main">
 <div class="container">
-    <form name="quiz" id="quiz">
-        <div>
-            <p class="testing">Q1. Which of the following is a server-side JavaScript object? (1 mark)</p>
-            <p><input type="radio" name="question1" value="Date" id="testing">A. Date</p>
-            <p><input type="radio" name="question1" value="FileUpload">B. FileUpload</p>
-            <p><input type="radio" name="question1" value="File">C. File</p>
-            <p><input type="radio" name="question1" value="Function">D. Function</p>
-        </div>
-        <div>
-            <p>Q2. What are the different types of errors in JavaScript? (1 mark)</p>
-            <p><input type="radio" name="question2" value="Load time errors">A. Load time errors</p>
-            <p><input type="radio" name="question2" value="Run time errors">B. Run time errors</p>
-            <p><input type="radio" name="question2" value="Logical Errors">C. Logical Errors</p>
-            <p><input type="radio" name="question2" value="All of the above">D. All of the above</p>
-        </div>
+
+    <form>
+        <div id="student-details">
         
-        <div>
-            <p>Q3. What are the different types of Pop up boxes available in JavaScript? (1 mark)</p>
-            <p><input type="radio" name="question3" value="Alert">A. Alert</p>
-            <p><input type="radio" name="question3" value="Prompt">B. Prompt</p>
-            <p><input type="radio" name="question3" value="Confirm">C. Confirm</p>
-            <p><input type="radio" name="question3" value="All of the above">D. All of the above</p>
+            <h1 class="text-center">Makini High School</h1>
+            <div class="banner">
+                <h2>Enter your details please</h2>
+            </div>
+            <div class="form-group">
+    
+                <label for="name">First Name*</label>
+                <input class="form-control" type="text" id="firstName">
+            </div>
+            <div class="form-group">
+                <label for="name">Second Name*</label>
+                <input class="form-control" type="text" id="secondName">
+            </div>
+            <button id="start-btn" class="btn">Enter</button>
+        
         </div>
-        <div>
-            <p>Q4. Which of the following JavaScript operator is used to assign a value to a variable based on some condition? (1 mark)</p>
-            <p><input type="radio" name="question4" value="Assignment operator">A. Assignment operator</p>
-            <p><input type="radio" name="question4" value="Bitwise Operator">B. Bitwise Operator</p>
-            <p><input type="radio" name="question4" value="Conditional operator">C. Conditional operator</p>
-            <p><input type="radio" name="question4" value="Logical Operator">D. Logical Operator</p>
+          
+        <div id="page1">
+            <h2 class="note">Answer all the questions</h2>
+
+            <div class="quiz1">
+                <h4>Q1. Which of the following is a server-side JavaScript object? (1 mark)</h4>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="language">
+                            <input value="0" type="radio" name="js" id="language">
+                            <span class="circle"></span>
+                            A. Date</label>
+                    </div>
+                    <div class="form-group">
+                        <label  for="asian">
+                            <input value="0" type="radio" name="js" id="asian">
+                            <span class="circle"></span>
+                            B. FileUpload</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="java">
+                            <input value="10" type="radio" name="js" id="java">
+                            <span class="circle"></span>
+                            C. File</label>
+                    </div>
+                    <div class="form-group">
+                        <label  for="none">
+                            <input value="0" type="radio" name="js" id="none">
+                            <span class="circle"></span>
+                            D. Function</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz2">
+                <h4>Q2. What are the different types of errors in JavaScript? (1 mark)</h4>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label  for="2018">
+                            <input value="0"type="radio" name="year" id="2018">
+                            <span class="circle"></span>
+                            A. Load time errors
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="1995">
+                            <input value="10" type="radio" name="year" id="1995">
+                            <span class="circle"></span>
+                            B. Run time errors</label>
+                    </div>
+                    <div class="form-group">
+                        <label  for="1837">
+                            <input  value="0" type="radio" name="year" id="1837">
+                            <span class="circle"></span>
+                            C. Logical errors</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="2000">
+                            <input value="0" type="radio" name="year" id="2000">
+                            <span class="circle"></span>
+                            D. All of the above</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz3">
+                <h4>Q3. What are the different types of Pop up boxes available in JavaScript? (1 mark) </h4>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="angular">
+                            <input value="0" type="radio" name="framework" id="angular">
+                            <span class="circle"></span>
+                            A. Alert</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="react">
+                            <input value="0" type="radio" name="framework" id="react">
+                            <span class="circle"></span>
+                            B. Prompt</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="bootstrap">
+                            <input value="0" type="radio" name="framework" id="bootstrap">
+                            <span class="circle"></span>
+                            C. Confirm</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="Vue">
+                            <input value="10" type="radio" name="framework" id="Vue">
+                            <span class="circle"></span>
+                            D. All of the above</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz4">
+                <h4>Q4. Which of the following JavaScript operator is used to assign a value to a variable based on some condition? (1 mark)</h4>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="keywords">
+                            <input value="0" type="radio" name="known" id="keywords">
+                            <span class="circle"></span>
+                            A. Assignment operator
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="data">
+                            <input value="0" type="radio" name="known" id="data">
+                            <span class="circle"></span>
+                            B. Bitwise operator
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="statements">
+                            <input value="10" type="radio" name="known" id="statements">
+                            <span class="circle"></span>
+                            C. Conditional operator
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="prototypes">
+                            <input value="0" type="radio" name="known" id="prototypes">
+                            <span class="circle"></span>
+                            D. Logical operator
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz5">
+                <h4>Q5. What was the original name of JavaScript when it discovered?(1 mark)</h4>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="oriented">
+                            <input value="0" type="radio" name="type" id="oriented">
+                            <span class="circle"></span>
+                            A. Livescript
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="assembly">
+                            <input value="0" type="radio" name="type" id="assembly">
+                            <span class="circle"></span>
+                            B. Escript
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="high">
+                            <input value="0" type="radio" name="type" id="high">
+                            <span class="circle"></span>
+                            C. Jscript
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="based">
+                            <input value="10" type="radio" name="type" id="based">
+                            <span class="circle"></span>
+                            D. Mocha
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+           
+        <div id="page2">
+            <div class="quiz6">
+                <h4>Q6. Which of these is NOT a JavaScript function?</h4>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="alert">
+                            <input value="0" type="radio" name="function" id="alert">
+                           <span class="circle"></span>
+                            alert()
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm">
+                            <input value="0" type="radio" name="function" id="confirm">
+                            <span class="circle"></span>
+                            confirm()</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="prompt">
+                            <input value="0" type="radio" name="function" id="prompt">
+                            <span class="circle"></span>
+                            prompt()</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="boolean">
+                            <input value="10" type="radio" name="function" id="boolean">
+                            <span class="circle"></span>
+                            boolean</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz7">
+                <h4>Q7. Which one of the following is not a keyword: (1 mark)</h4>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="wrong-1">
+                            <input value="0" type="radio" name="dom" id="wrong-1">
+                            <span class="circle"></span>
+                            A. if</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="wrong-2">
+                            <input  value="0" type="radio" name="dom" id="wrong-2">
+                            <span class="circle"></span>
+                            B. with</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="right">
+                            <input  value="10" type="radio" name="dom" id="right">
+                            <span class="circle"></span>
+                            C. use strict</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="wrong-3">
+                            <input value="0" type="radio" name="dom" id="wrong-3">
+                            <span class="circle"></span>
+                            D. debugger</label>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz8">
+                <h4>Q8. Which of these is a JavaScript library?</h4>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="body">
+                            <input value="0" type="radio" name="link" id="body">
+                            <span class="circle"></span>
+                            A. HTML</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="head">
+                            <input value="10" type="radio" name="link" id="head">
+                            <span class="circle"></span>
+                            B. jQuery</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="html">
+                            <input value="0" type="radio" name="link" id="html">
+                            <span class="circle"></span>
+                            C. CSS</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="section">
+                            <input value="0" type="radio" name="link" id="section">
+                            <span class="circle"></span>
+                            D. Sass</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz9">
+                <h4>Q9. JavaScript is the programming language of the?</h4>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="desktop">
+                            <input value="0" type="radio" name="programming" id="desktop">
+                            <span class="circle"></span>
+                            A. Desktop
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="mobile">
+                            <input value="0" type="radio" name="programming" id="mobile">
+                            <span class="circle"></span>
+                            B. Mobile
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="web">
+                            <input value="10" type="radio" name="programming" id="web">
+                            <span class="circle"></span>
+                            C. Web
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="server">
+                            <input value="0" type="radio" name="programming" id="server">
+                            <span class="circle"></span>
+                            D. Server
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz10">
+                <h4>Q10. Which one of the following is not a example of closures?(1 mark)</h4>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="script">
+                            <input value="10" type="radio" name="element" id="script">
+                            <span class="circle"></span>
+                            A. Graphics
+
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="javascript">
+                            <input value="0" type="radio" name="element" id="javascript">
+                            <span class="circle"></span>
+                            B. Variables
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="js">
+                            <input value="0" type="radio" name="element" id="js">
+                            <span class="circle"></span>
+                            C. Functions
+                        </label>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="form-group">
+                        <label for="scripting">
+                            <input value="0" type="radio" name="element" id="scripting">
+                            <span class="circle"></span>
+                            D. Objects
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <button id="submit" class="btn">Submit</button>
         </div>
-        <div>
-            <p>Q5. What was the original name of JavaScript when it discovered?(1 mark)</p>
-            <p><input type="radio" name="question5" value="LiveScript">A. LiveScript</p>
-            <p><input type="radio" name="question5" value="EScript">B. EScript</p>
-            <p><input type="radio" name="question5" value="JScript">C. JScript</p>
-            <p><input type="radio" name="question5" value="Mocha">D. Mocha</p>
+
+        <div id="score">
+            <p class="text-center">Your score is:</p>
+            <p class="text-center scoreDisplay"></p>
+            <br>
+            <p class="text-center name-display"></p>
+            <br>
+           
+
         </div>
-        <!--<div>
-            <p>Q6. Which of the following is not a JavaScript framework or library?(1 mark)</p>
-            <p><input type="radio" name="question6" value="Polymer">A. Polymer</p>
-            <p><input type="radio" name="question6" value="Meteor">B. Meteor</p>
-            <p><input type="radio" name="question6" value="jQuery">C. jQuery</p>
-            <p><input type="radio" name="question6" value="Cassandra">D. Cassandra</p>
-        </div>
-        <div>
-            <p>Q7. Which one of the following is not a keyword: (1 mark)</p>
-            <p><input type="radio" name="question7" value="if">A. if</p>
-            <p><input type="radio" name="question7" value="with">B. with</p>
-            <p><input type="radio" name="question7" value="debugger">C. debugger</p>
-            <p><input type="radio" name="question7" value="use strict">D. use strict</p>
-        </div>
-        <div>
-            <p>Q8. A set of unordered properties that, has a name and value is called______ (1 mark)</p>
-            <p><input type="radio" name="question8" value="String">A. String</p>
-            <p><input type="radio" name="question8" value="Array">B. Array</p>
-            <p><input type="radio" name="question8" value="Serialized Object">C. Serialized Object</p>            </p>
-            <p><input type="radio" name="question8" value="Object">D. Object</p>
-        </div>
-        <div>
-            <p>Q9. Which one of the following is not a example of closures?(1 mark)</p>
-            <p><input type="radio" name="question9" value="Graphics">A. Graphics</p>
-            <p><input type="radio" name="question9" value="Variables">B. Variables</p>
-            <p><input type="radio" name="question9" value="Functions">C. Functions</p>
-            <p><input type="radio" name="question9" value="Objects">D. Objects</p>
-        </div>-->
-        <input type="button" value="Submit" id="button" onclick="check()">
     </form>
 </div>
 </div>
-    <p id="results"></p>
-    <script src="index.js"></script>
 </body>
-
+<script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
 </html>
